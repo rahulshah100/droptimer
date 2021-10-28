@@ -1,0 +1,27 @@
+{% extends "BaseTemplate.html" %}
+
+{% block title %} About {% endblock %}
+{% block page %} Home {% endblock %}
+{% block url %}./{% endblock %}}
+
+{% block body %}
+<div class="container" style="margin: auto;text-align: center;position: relative;top: -10%;text-shadow: 2px 2px rgb(5, 5, 205);">
+    
+    <h6><b>Hi Viewer,</b> I hope your eyes have been watery through out today!</h6>
+
+    <p style="width: 40%; text-align: center; margin: auto;text-shadow: 2px 2px 2px black; margin-top:2% ;">    
+            The Purpose of this Web-Page is to serve as your Eye-Drops' Time Scheduler.Just input the First Time in the Day when you put the Eye Drop, and the adviced interval for reputting them. This website will tell you all the time in the Next 24 Hours, when you need to put Eye Drops again.        
+    </p>
+
+    <footer style="position: relative;bottom: -140px !important;">
+        <h6>This Page has been developed with ❤️ BY Rahul Shah</h6>
+
+        <div>
+            <a href="https://www.linkedin.com/in/shah-rahul-7950541a7" target="_blank" style="color: white;"><i class="bi bi-linkedin" style="padding-right:10px; zoom: 1.1;"></i></a>
+            <a href="mailto:rahulkshah00@gmail.com" target="_blank"><i class="bi bi-envelope-fill" style="padding-right:10px;color: white;zoom: 1.1;"></i></a>
+            <a href="https://www.instagram.com/rahul_shah100/" target="_blank" style="color: white;"><i class="bi bi-instagram" style="padding-right:10px;color: white;zoom: 1.1;" onclick="open_insta()"></i></a>
+            <a href="tel:+918734000193" style="color: white;"><i class="bi bi-telephone"></i></a>
+        </div>
+    </footer>
+</div>
+{% endblock %}

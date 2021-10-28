@@ -1,0 +1,285 @@
+@font-face {
+  font-family: AlexBrush;
+  src        : url('AlexBrush-Regular.ttf');
+}
+
+@font-face {
+  font-family: Aguafina;
+  src        : url('AguafinaScript-Regular.ttf');
+}
+
+@font-face {
+  font-family: Sacramento;
+  src        : url('Sacramento-Regular.ttf');
+}
+
+body {
+  background             : url("background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+  color                  : white;
+}
+
+#Heading {
+  position   : absolute;
+  right      : 42%;
+  top        : 10px;
+  text-align : right;
+  opacity    : 0.89;
+  margin-top : 20px;
+  text-shadow: -1px -2px 8px black;
+  font-family: Sacramento;
+  font-size  : 3em;
+  cursor     : pointer;
+}
+
+#PageHeading {
+  position: absolute;
+  top     : 5%;
+  left    : 2%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 1px 1px 10px rgb(31, 21, 221);
+  padding: 0% 2%;
+  cursor: pointer;
+}
+
+#sub-heading {
+  text-shadow   : 2px 2px black;
+  font-family   : AlexBrush;
+  letter-spacing: 2px;
+  word-spacing  : 2px;
+  font-size     : 1.2em;
+  position      : absolute;
+  bottom        : -7px;
+  right         : 22px;
+  text-align    : right;
+  opacity       : 0.89;
+  cursor        : pointer;
+}
+
+fieldset {
+  padding      : 10px 25px;
+  margin-bottom: 3px;
+  border       : 2px solid;
+  border-radius: 20px;
+}
+
+legend {
+  letter-spacing: 3px;
+  text-shadow   : 2px 2px 8px black;
+  font-family   : Aguafina;
+  float         : none;
+  padding       : 0px 13px !important;
+  width         : auto;
+  margin-bottom : 0.5rem;
+  font-size     : calc(1.325rem + .3vw);
+}
+
+label {
+  cursor     : pointer;
+  text-shadow: 1px 1px black;
+  min-height : 50px;
+}
+
+form {
+  margin        : auto;
+  margin-top    : 14%;
+  width         : fit-content;
+  vertical-align: middle;
+}
+
+::-webkit-input-placeholder {
+  color      : white;
+  font-weight: 700;
+  opacity    : 0.74;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color      : white;
+  font-weight: 700;
+  opacity    : 0.74;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color      : white;
+  font-weight: 700;
+  opacity    : 0.74;
+}
+
+:-ms-input-placeholder {
+  color      : white;
+  font-weight: 700;
+  opacity    : 0.74;
+}
+
+.dropdown {
+  margin-left     : 5%;
+  border          : 1px inset black;
+  box-shadow      : 1px 1px 3px white;
+  position        : relative;
+  left            : -110%;
+  top             : -12px;
+  border-radius   : 5px;
+  color           : aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+input {
+  width           : 75%;
+  text-align      : left;
+  text-indent     : 0px;
+  background-color: transparent;
+  border          : transparent;
+  border-radius   : 5px;
+  color           : white;
+  font-weight     : 700;
+  text-shadow     : 2px 2px black;
+  position        : relative;
+  top             : -12px;
+}
+
+.showRedBorder {
+  border: 2px solid red;
+}
+
+input:focus {
+  outline: none;
+}
+
+.errmsg {
+  font-size  : 90%;
+  text-align : left;
+  font-weight: 400;
+  color      : red;
+  text-shadow: 1px 1px 3px black;
+  position   : relative;
+  right      : -100%;
+  top        : -20px;
+  padding    : 0% 3%;
+  width      : fit-content;
+  background : rgba(24, 1, 1, 0.5);
+}
+
+.bi-plus-circle {
+  position: relative;
+  left    : 123%;
+  cursor  : pointer;
+}
+
+.bi-plus-circle-fill {
+  position: relative;
+  left    : 123%;
+  cursor  : pointer;
+}
+
+.add {
+  font-weight: 500;
+  font-style : italic;
+  position   : relative;
+  left       : 125%;
+  margin-top : 10px;
+  text-shadow: 2px 2px black;
+}
+
+.addclicked {
+  text-shadow: -1px -1px grey;
+}
+
+.footer {
+  position  : absolute;
+  background: black;
+  bottom    : 0;
+  font-size : 0.8em;
+  width     : 100%;
+}
+
+.dropper {
+  position  : absolute;
+  right     : 36%;
+  top       : 27px;
+  text-align: right;
+  opacity   : 0.89;
+}
+
+/* Bubbles */
+.bubbles {
+  position        : absolute;
+  bottom          : 0;
+  z-index         : 5;
+  margin-right    : 50px;
+  background-color: white;
+  border-radius   : 50%;
+  opacity         : .50;
+  width           : 40px;
+  height          : 40px;
+  animation       : up 4s infinite;
+}
+
+.bubble-2 {
+  left     : 350px;
+  animation: up 2s infinite;
+}
+
+.bubble-3 {
+  left     : 750px;
+  opacity  : .30;
+  animation: up 5s infinite;
+}
+
+.bubble-4 {
+  left     : 1150px;
+  animation: up 6s infinite;
+}
+
+.bubble-5 {
+  left     : 50px;
+  animation: up 5s infinite;
+}
+
+.bubble-6 {
+  left     : 300px;
+  opacity  : .30;
+  animation: up 3s infinite;
+}
+
+.bubble-7 {
+  left     : 670px;
+  animation: up 4s infinite;
+}
+
+.bubble-8 {
+  left     : 1050px;
+  opacity  : .30;
+  animation: up 3s infinite;
+}
+
+/* Bubbles Animation */
+@keyframes up {
+  100% {
+    transform: translateY(-800px);
+  }
+}
+
+/* Output Console */
+#Result {
+  padding         : 10px 20px;
+  width           : 40%;
+  color           : white;
+  font-size       : 80%;
+  box-shadow      : 2px 2px 4px rgb(45, 45, 239);
+  background-color: rgba(24, 1, 1, 0.94);
+  border-radius   : 10px;
+  margin          : 0px auto;
+  height          : fit-content;
+  position        : absolute;
+  bottom          : 75px;
+  display         : none;
+}
+
+i{
+  cursor: pointer;
+}
