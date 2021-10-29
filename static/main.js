@@ -38,20 +38,19 @@ function schedule() {
 
     let interval_mins = ""
     let commenced_mins = ""
+
     if (interval.value.includes(".")) {
         interval_mins = Number(interval.value.toString().substring(interval.value.toString().indexOf(".") + 1))
     }
     else {
         interval_mins = 0;
-        console.log(interval_mins)
     }
-    
+
     if (interval.value.includes(".")) {
         commenced_mins = Number(commenced_at.value.toString().substring(commenced_at.value.toString().indexOf(".") + 1))
     }
     else {
         commenced_mins = 0;
-        console.log(commenced_mins)
     }
 
     if (commenced_at.value.length == 0 || !commenced_at.value.replace(/\s/g, '').length) {
@@ -128,7 +127,7 @@ function calculateSchedule(commenced_at, interval, Am_Pm) {
     let timer = 0;
     let next_drop_at = commenced_at;
 
-    let next_drop_at_min = parseFloat(next_drop_at.toString().substring(next_drop_at.toString().indexOf(".") + 1));
+    let next_drop_at_min = ""
 
     while (timer < 24) {
         next_drop_at = parseFloat(next_drop_at);
@@ -136,17 +135,18 @@ function calculateSchedule(commenced_at, interval, Am_Pm) {
         timer += interval;
         next_drop_at = (next_drop_at + interval).toFixed(2);
 
-        console.log("printing noext drop at min", typeof (next_drop_at_min), next_drop_at_min)
+        next_drop_at_min = parseFloat(next_drop_at.toString().substring(next_drop_at.toString().indexOf(".") + 1));
 
-        if (next_drop_at_min > 6) {
-            console.log("hERE")
-            console.log(next_drop_at, next_drop_at_min)
+        console.log(1,next_drop_at, next_drop_at_min)
+
+        while (next_drop_at_min.toFixed(3) >= (6).toFixed(3)) {
             next_drop_at = (next_drop_at - 0.60 + 1).toFixed(2);
             next_drop_at_min = Number(next_drop_at_min) - 60;
-            console.log(next_drop_at, next_drop_at_min, "/n")
         }
 
-        if (next_drop_at > 13) {
+        console.log(2,next_drop_at, next_drop_at_min,next_drop_at_min.toFixed(3),(6).toFixed(3),next_drop_at_min.toFixed(3)>=(6).toFixed(3))
+
+        while (next_drop_at > 13 || next_drop_at == 13) {
             if (Am_Pm == "AM") {
                 Am_Pm = "PM"
             }
@@ -155,6 +155,8 @@ function calculateSchedule(commenced_at, interval, Am_Pm) {
             }
             next_drop_at = (next_drop_at - 12).toFixed(2);
         }
+
+        console.log(3,next_drop_at, next_drop_at_min)
 
         if (timer >= 24) {
             theSchedule = theSchedule.concat(next_drop_at, Am_Pm);
