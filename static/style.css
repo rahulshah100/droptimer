@@ -97,9 +97,9 @@
     margin-left: 90% !important;
   }
 
-  #Result{
-    width: 60% !important;
-    padding: 7px 16px !important; 
+  #Result {
+    width    : 60% !important;
+    padding  : 7px 16px !important;
     font-size: 85% !important;
   }
 }
@@ -118,7 +118,7 @@
     width: 88% !important;
   }
 
-  #Result{
+  #Result {
     width: 80% !important;
   }
 }
@@ -356,6 +356,20 @@ input {
   top             : -12px;
 }
 
+input:focus {
+  width           : 75%;
+  text-align      : left;
+  text-indent     : 0px;
+  background-color: transparent;
+  border          : transparent;
+  border-radius   : 5px;
+  color           : white;
+  font-weight     : 700;
+  text-shadow     : 2px 2px black;
+  position        : relative;
+  top             : -12px;
+}
+
 .showRedBorder {
   border: 2px solid red;
 }
@@ -425,7 +439,7 @@ input:focus {
   bottom          : 0;
   z-index         : 5;
   margin-right    : 50px;
-  background-color: white;
+  background-color: rgb(255 255 255) !important;
   border-radius   : 50%;
   opacity         : .50;
   width           : 40px;
