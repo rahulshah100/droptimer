@@ -23,7 +23,6 @@ function addclicked() {
     }
 }
 
-
 function schedule() {
     let commenced_at = document.getElementsByClassName('commenced_at')[0];
     let commenced_at_val = 0
@@ -137,14 +136,14 @@ function calculateSchedule(commenced_at, interval, Am_Pm) {
 
         next_drop_at_min = parseFloat(next_drop_at.toString().substring(next_drop_at.toString().indexOf(".") + 1));
 
-        console.log(1,next_drop_at, next_drop_at_min)
+        console.log(1, next_drop_at, next_drop_at_min)
 
         while (next_drop_at_min.toFixed(3) >= (6).toFixed(3)) {
             next_drop_at = (next_drop_at - 0.60 + 1).toFixed(2);
             next_drop_at_min = Number(next_drop_at_min) - 60;
         }
 
-        console.log(2,next_drop_at, next_drop_at_min,next_drop_at_min.toFixed(3),(6).toFixed(3),next_drop_at_min.toFixed(3)>=(6).toFixed(3))
+        console.log(2, next_drop_at, next_drop_at_min, next_drop_at_min.toFixed(3), (6).toFixed(3), next_drop_at_min.toFixed(3) >= (6).toFixed(3))
 
         while (next_drop_at > 13 || next_drop_at == 13) {
             if (Am_Pm == "AM") {
@@ -156,7 +155,7 @@ function calculateSchedule(commenced_at, interval, Am_Pm) {
             next_drop_at = (next_drop_at - 12).toFixed(2);
         }
 
-        console.log(3,next_drop_at, next_drop_at_min)
+        console.log(3, next_drop_at, next_drop_at_min)
 
         if (timer >= 24) {
             theSchedule = theSchedule.concat(next_drop_at, Am_Pm);

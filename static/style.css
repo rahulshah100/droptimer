@@ -1,3 +1,212 @@
+@media only screen and (max-width: 1100px) {
+  .dropper {
+    right: 34% !important;
+  }
+
+  #Result {
+    width    : 55% !important;
+    max-width: fit-content !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dropper {
+    right: 32% !important;
+  }
+
+  form {
+    margin-top: 18% !important;
+  }
+
+  .container p {
+    width: 64% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    zoom: 0.9 !important;
+  }
+
+  form {
+    margin-top: 22% !important;
+  }
+
+  .container p {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  form {
+    margin-top: 26% !important;
+  }
+
+  body {
+    zoom: 0.85 !important;
+  }
+
+  #Result {
+    width: 65% !important;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  form {
+    margin-top: 28% !important;
+  }
+
+  #Heading {
+    right: 34% !important;
+  }
+
+  .dropper {
+    right: 21% !important;
+  }
+
+  body {
+    background-size: 250% 100% !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  form {
+    font-size: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    zoom           : 0.75 !important;
+    background-size: 300% 100% !important;
+  }
+
+  form {
+    margin-top: 33% !important;
+  }
+
+  #Heading {
+    right: 29% !important;
+  }
+
+  .dropper {
+    right: 16% !important;
+  }
+
+  .dropdown {
+    margin-left: 90% !important;
+  }
+
+  #Result{
+    width: 60% !important;
+    padding: 7px 16px !important; 
+    font-size: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  body {
+    zoom           : 0.7 !important;
+    background-size: 325% 100% !important;
+  }
+
+  input {
+    width: 95% !important;
+  }
+
+  form {
+    width: 88% !important;
+  }
+
+  #Result{
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  form {
+    width     : 89% !important;
+    font-size : 95% !important;
+    margin-top: 39% !important;
+  }
+
+  fieldset {
+    padding: 19px 14px !important;
+  }
+
+  #PageHeading {
+    left: 1% !important;
+    top : 4% !important;
+    zoom: 0.9 !important;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  #Heading {
+    zoom: 0.89 !important;
+  }
+
+  .dropper {
+    right      : 16% !important;
+    zoom       : 0.85 !important;
+    margin-left: 121% !important;
+  }
+
+  form {
+    width: 85% !important;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  form {
+    font-size: 85% !important;
+    /* zoom  : 1.1; */
+  }
+
+  .dropdown {
+    left: -77% !important;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  body {
+    zoom: 0.68 !important;
+  }
+
+  .dropdown {
+    left: -69% !important;
+  }
+
+  input {
+    width: 109% !important;
+  }
+
+  #Heading {
+    right: 26% !important;
+    zoom : 0.89 !important;
+  }
+
+  .dropper {
+    right: 14% !important;
+  }
+
+  .dropper {
+    zoom: 0.86 !important;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  body {
+    zoom: 0.6 !important;
+  }
+
+  form {
+    font-size: 90% !important;
+  }
+}
+
 @font-face {
   font-family: AlexBrush;
   src        : url('AlexBrush-Regular.ttf');
@@ -22,6 +231,11 @@ body {
   color                  : white;
 }
 
+/* To Hide ScrollBar for Result Box */
+::-webkit-scrollbar {
+  display: none;
+}
+
 #Heading {
   position   : absolute;
   right      : 42%;
@@ -36,13 +250,13 @@ body {
 }
 
 #PageHeading {
-  position: absolute;
-  top     : 5%;
-  left    : 2%;
+  position   : absolute;
+  top        : 5%;
+  left       : 2%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  box-shadow: 1px 1px 10px rgb(31, 21, 221);
-  padding: 0% 2%;
-  cursor: pointer;
+  box-shadow : 1px 1px 10px rgb(31, 21, 221);
+  padding    : 0% 2%;
+  cursor     : pointer;
 }
 
 #sub-heading {
@@ -266,20 +480,22 @@ input:focus {
 
 /* Output Console */
 #Result {
-  padding         : 10px 20px;
-  width           : 40%;
-  color           : white;
-  font-size       : 80%;
-  box-shadow      : 2px 2px 4px rgb(45, 45, 239);
-  background-color: rgba(24, 1, 1, 0.94);
-  border-radius   : 10px;
-  margin          : 0px auto;
-  height          : fit-content;
-  position        : absolute;
-  bottom          : 75px;
-  display         : none;
+  padding            : 10px 20px;
+  width              : 40%;
+  height             : 10%;
+  color              : white;
+  font-size          : 80%;
+  box-shadow         : 2px 2px 4px rgb(45, 45, 239);
+  background-color   : rgba(24, 1, 1, 0.94);
+  border-radius      : 10px;
+  margin             : 0px auto;
+  /* height          : fit-content; */
+  position           : absolute;
+  bottom             : 75px;
+  display            : none;
+  overflow           : scroll !important;
 }
 
-i{
+i {
   cursor: pointer;
 }
