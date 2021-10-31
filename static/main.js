@@ -7,20 +7,20 @@ window.onload = (event) => {
 }
 
 function addclicked() {
-    a = document.getElementsByClassName('add')[0];
-    b = document.getElementsByClassName('bi')[0];
-    if (clicked) {
-        clicked = false
-        a.className += " addclicked"
-        b.className += " bi-plus-circle-fill"
-        b.classList.remove("bi-plus-circle")
-    }
-    else {
-        clicked = true
-        a.classList.remove("addclicked")
-        b.className += " bi-plus-circle"
-        b.classList.remove("bi-plus-circle-fill")
-    }
+    // a = document.getElementsByClassName('add')[0];
+    // b = document.getElementsByClassName('bi')[0];
+    // if (clicked) {
+    //     clicked = false
+    //     a.className += " addclicked"
+    //     b.className += " bi-plus-circle-fill"
+    //     b.classList.remove("bi-plus-circle")
+    // }
+    // else {
+    //     clicked = true
+    //     a.classList.remove("addclicked")
+    //     b.className += " bi-plus-circle"
+    //     b.classList.remove("bi-plus-circle-fill")
+    // }
 }
 
 function schedule() {
