@@ -25,7 +25,7 @@
     <img src="{{url_for('static',filename='dropper.png')}}" width="60" class="dropper">
 
     <video loop title="BubbleSound" webkit-playsinline="true" playsinline="true"
-        style="position: absolute; width: 0px; height: 0px;" src="../static/sound.mp3" autoplay=1></video>
+        style="position: absolute; width: 0px; height: 0px;" src="{{url_for('static',filename='sound.mp3')}}" autoplay=1></video>
 
     <div id="PageHeading" onclick="location.href = './{% block url %}{% endblock %}'">To- {% block page %}{% endblock %}
     </div>
