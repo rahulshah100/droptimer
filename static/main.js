@@ -4,6 +4,14 @@ window.onload = (event) => {
     if (document.getElementsByClassName('commenced_at')[0]) {
         document.getElementsByClassName('commenced_at')[0].focus();
     }
+
+    // for video autoplay, interaction is required to autoplay hence we'll reload the landing page again
+
+}
+
+function onPlayerReady(event) {
+    event.target.setVolume(2);
+    event.target.playVideo();
 }
 
 function addclicked() {
