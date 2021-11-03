@@ -231,7 +231,6 @@ body {
   -o-background-size     : cover;
   background-size        : cover;
   color                  : white;
-  position               : absolute !important;
 }
 
 /* To Hide ScrollBar for Result Box */
@@ -493,4 +492,14 @@ input:focus {
 
 i {
   cursor: pointer;
+}
+
+
+
+#fixed {
+  position: fixed;
+}
+
+#fixed.absolute {
+  position: absolute;
 }
