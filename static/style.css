@@ -231,7 +231,7 @@ body {
   -o-background-size     : cover;
   background-size        : cover;
   color                  : white;
-  overflow               : auto;
+  position               : relative !important;
 }
 
 /* To Hide ScrollBar for Result Box */
@@ -274,7 +274,6 @@ body {
   text-align    : right;
   opacity       : 0.89;
   cursor        : pointer;
-  z-index       : -1;
 }
 
 fieldset {
