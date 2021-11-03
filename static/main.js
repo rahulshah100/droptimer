@@ -1,14 +1,7 @@
 // let clicked = true
 
 window.onload = (event) => {
-    if (document.getElementsByClassName('commenced_at')[0]) {
-        document.getElementsByClassName('commenced_at')[0].focus();
-    }
-}
-
-function onPlayerReady(event) {
-    event.target.setVolume(2);
-    event.target.playVideo();
+    document.getElementsByClassName('commenced_at')[0].focus();    
 }
 
 // function addclicked() {

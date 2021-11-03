@@ -225,12 +225,13 @@
 }
 
 body {
-  background             : url("./background.jpg") no-repeat center center;
+  background             : url("./background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size   : cover;
   -o-background-size     : cover;
   background-size        : cover;
   color                  : white;
+  overflow: auto;
 }
 
 /* To Hide ScrollBar for Result Box */
