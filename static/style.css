@@ -65,7 +65,7 @@
   }
 
   body {
-    background-size: 250% 100% !important;
+    background-size   : 250% 100% !important;
     /* background-size: 825px 953px !important; */
   }
 }
@@ -78,8 +78,8 @@
 
 @media only screen and (max-width: 500px) {
   body {
-    zoom           : 0.75 !important;
-    background-size: 300% 100% !important;
+    zoom              : 0.75 !important;
+    background-size   : 300% 100% !important;
     /* background-size: 760px 1153px !important; */
   }
 
@@ -108,8 +108,8 @@
 
 @media only screen and (max-width: 430px) {
   body {
-    zoom           : 0.7 !important;
-    background-size: 325% 100% !important;
+    zoom              : 0.7 !important;
+    background-size   : 325% 100% !important;
     /* background-size: 838px 1100px !important; */
   }
 
@@ -231,7 +231,7 @@ body {
   -o-background-size     : cover;
   background-size        : cover;
   color                  : white;
-  overflow: auto;
+  overflow               : auto;
 }
 
 /* To Hide ScrollBar for Result Box */
@@ -274,6 +274,7 @@ body {
   text-align    : right;
   opacity       : 0.89;
   cursor        : pointer;
+  z-index       : -1;
 }
 
 fieldset {
@@ -476,19 +477,19 @@ input:focus {
 
 /* Output Console */
 #Result {
-  padding            : 10px 20px;
-  width              : 40%;
-  height             : 10%;
-  color              : white;
-  font-size          : 80%;
-  box-shadow         : 2px 2px 4px rgb(45, 45, 239);
-  background-color   : rgba(24, 1, 1, 0.94);
-  border-radius      : 10px;
-  margin             : 0px auto;
-  position           : absolute;
-  bottom             : 75px;
-  display            : none;
-  overflow           : scroll !important;
+  padding         : 10px 20px;
+  width           : 40%;
+  height          : 10%;
+  color           : white;
+  font-size       : 80%;
+  box-shadow      : 2px 2px 4px rgb(45, 45, 239);
+  background-color: rgba(24, 1, 1, 0.94);
+  border-radius   : 10px;
+  margin          : 0px auto;
+  position        : absolute;
+  bottom          : 75px;
+  display         : none;
+  overflow        : scroll !important;
 }
 
 i {
