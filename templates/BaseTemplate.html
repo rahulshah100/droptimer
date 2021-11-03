@@ -24,16 +24,8 @@
 
     <img src="{{url_for('static',filename='dropper.png')}}" width="60" class="dropper">
 
-    <!-- <video loop id="vid" title="BubbleSound" webkit-playsinline="true" playsinline="true"
-        style="position: absolute; width: 0px; height: 0px;" src="{{url_for('static',filename='sound.mp3')}}" autoplay></video> -->
-
-    <video width="0" height="0" controls autoplay id="vid">
-        <source src="{{url_for('static',filename='sound.mp3')}}" type="video/mp3">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1">
-    </iframe> -->
+    <video loop id="vid" title="BubbleSound" webkit-playsinline="true" playsinline="true"
+        style="position: absolute; width: 0px; height: 0px;" src="{{url_for('static',filename='sound.mp3')}}" autoplay></video>
 
     <div id="PageHeading" onclick="location.href = './{% block url %}{% endblock %}'">To- {% block page %}{% endblock %}
     </div>

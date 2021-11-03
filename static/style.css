@@ -65,8 +65,8 @@
   }
 
   body {
-    /* background-size: 250% 100% !important; */
-    background-size: 825px 953px !important;
+    background-size: 250% 100% !important;
+    /* background-size: 825px 953px !important; */
   }
 }
 
@@ -79,8 +79,8 @@
 @media only screen and (max-width: 500px) {
   body {
     zoom           : 0.75 !important;
-    /* background-size: 300% 100% !important; */
-    background-size: 760px 1153px !important;
+    background-size: 300% 100% !important;
+    /* background-size: 760px 1153px !important; */
   }
 
   form {
@@ -109,8 +109,8 @@
 @media only screen and (max-width: 430px) {
   body {
     zoom           : 0.7 !important;
-    /* background-size: 325% 100% !important; */
-    background-size: 838px 1100px !important;
+    background-size: 325% 100% !important;
+    /* background-size: 838px 1100px !important; */
   }
 
   input {
@@ -229,7 +229,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size   : cover;
   -o-background-size     : cover;
-  background-size        : cover;
+  background-size        : cover auto;
   color                  : white;
 }
 
