@@ -1,12 +1,9 @@
-let clicked = true
+// let clicked = true
 
 window.onload = (event) => {
     if (document.getElementsByClassName('commenced_at')[0]) {
         document.getElementsByClassName('commenced_at')[0].focus();
     }
-
-    // for video autoplay, interaction is required to autoplay hence we'll reload the landing page again
-
 }
 
 function onPlayerReady(event) {
@@ -14,7 +11,7 @@ function onPlayerReady(event) {
     event.target.playVideo();
 }
 
-function addclicked() {
+// function addclicked() {
     // a = document.getElementsByClassName('add')[0];
     // b = document.getElementsByClassName('bi')[0];
     // if (clicked) {
@@ -29,7 +26,7 @@ function addclicked() {
     //     b.className += " bi-plus-circle"
     //     b.classList.remove("bi-plus-circle-fill")
     // }
-}
+// }
 
 function schedule() {
     let commenced_at = document.getElementsByClassName('commenced_at')[0];
