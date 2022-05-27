@@ -493,13 +493,3 @@ input:focus {
 i {
   cursor: pointer;
 }
-
-
-
-#fixed {
-  position: fixed;
-}
-
-#fixed.absolute {
-  position: absolute;
-}

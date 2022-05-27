@@ -166,10 +166,3 @@ function calculateSchedule(commenced_at, interval, Am_Pm) {
 
     return theSchedule;
 }
-
-function myfun(e){
-    if (document.getElementById("fixed") == document.activeElement) {
-        document.getElementById("fixed").class += "absolute"
-    }
-    
-}
